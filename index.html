@@ -165,7 +165,7 @@
                 inclusive, multi-modal transportation system could look like in North Texas.
             </p>
 
-            <h1>Sign up to join <span id="signup-counter"><span class="placeholder">(counting)</span></span> other Dallasites for Week Without Driving!</h1>
+            <h1>Our goal is for 100 Dallasites to participate in Week Without Driving — help us reach our goal and sign up!</h1>
 
             <a id="signup-button" href="#signup-form">Sign up for the challenge!</a>
 
@@ -214,16 +214,6 @@
                 width="640" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </div>
-    <script>
-        async function updateCount() {
-            const res = await fetch("https://script.google.com/macros/s/AKfycbxZenbWU4ZeE1Bsx5-hdd3Z1-Qtt4VJ57zmc3T1JJetT_hM1K7qM-j_o1_CEo3jMvt9/exec");
-            const count = await res.text();
-            console.log(`Total submissions: ${count}`);
-            document.querySelector('#signup-counter').innerHTML= count;
-        }
-        updateCount();
-        setInterval(updateCount, 30000); // refresh every minute
-    </script>
 </body>
 
 </html>
